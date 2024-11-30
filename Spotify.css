@@ -1,0 +1,483 @@
+/* utility css import */
+@import url('./utility.css');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif)); */
+    
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+
+    /* I dont know about this */
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: greenyellow;  
+}
+
+nav{
+    /* comment this after your done
+    border: 2px solid red; */
+    background-color: black;
+    height: 79px;
+    display: flex;
+}
+
+/* this is logo */
+#d1{
+    width: 33%;
+    height: 80px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#d1 svg{
+    /* this will not work for svg */
+    /* color: white; */
+    /* use fill prop for svgs */
+    fill: white;
+    height: 2.25em;
+}
+
+#d2{
+    /* border: 2px solid red; */
+    height: 79px;
+    width: 54%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#d2 ol{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+#d2 ol>li>a{
+    color: white;
+    text-decoration: none;
+}
+#d2 ol>li>a:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+main{
+    height: 600px;
+    background: url("./assets/bubbles-dktp.svg") center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+    display: flex;
+}
+
+#d3{
+    /* border: 2px solid red; */
+    height: 671px;
+    width: 86.3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+#d31{
+    /* border: 2px solid blue; */
+    height: 672px;
+    width: 47.4%;
+}
+
+#d3 svg{
+    /* border: 2px solid; */
+    width: 286px;
+    height: 573px;
+}
+
+#d3 img{
+    /* border: 2px solid; */
+    width: 267px;
+    height: 445px;
+    position: absolute;
+    right: 1.8%;
+    top: 22.9%;
+}
+
+#d4{
+    /* border: 2px solid; */
+    height: 600px;
+    width: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#d32{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+
+#d32 h1{
+    /* border: 2px solid black; */
+    color: white;
+    width: 80%;
+    font-size: 57px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -1.92px;
+    padding-bottom: 32px;
+    
+}
+
+#d5 a{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+#d5{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+#d6{
+    /* border: 2px solid red; */
+    height: 590px;
+}
+
+#d6 h1{
+    /* border: 2px solid blue; */
+    text-align: center;
+    font-size: 39px;
+    word-spacing: -5px;
+}
+
+#whyspotify{
+    /* border: 2px solid brown; */
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+#whyspotify div{
+    /* border: 2px solid green; */
+    height: 300px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#whyspotify h3{
+    text-align: center;
+    height: 35px;
+    
+}
+
+#whyspotify img{
+    height: 150px;
+    width: 150px;
+}
+
+#whyspotify p{
+    text-align: center;
+    line-height: 25px;
+    width: 80%;
+    height: 100px;
+}
+
+/* #d7 */
+#d7{
+    /* border: 2px solid red; */
+    height: 500px;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#d7 h1{
+    color: #fff;
+    font-size: xxx-large;
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: -9px;
+}
+
+/* article */
+article{
+    /* border: 3px solid red; */
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+article div{
+    /* border: 2px solid blue; */
+    height: inherit;
+    width: 1170px;
+}
+
+article h1{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    word-spacing: 0px;
+}
+
+article ul,summary{
+    list-style: none;
+}
+
+article summary{
+    /* border: 2px solid; */
+    padding: 2%;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+article summary:hover{
+    text-decoration: underline;
+    background-color: aliceblue;
+}
+
+article p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 2.5%;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+}
+
+article summary>span i{
+    font-size: 40px;
+}
+
+article p>span{
+    color: rgb(16, 116, 52);
+}
+
+/* ready lets play part */
+
+#getspotify{
+    /* border: 2px solid red; */
+    height: 450px;
+    background: url(../Spotify/assets/lets-play.svg) left -10px bottom -160px / 100% 1114px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) 16%, rgb(240, 55, 166)) rgb(108, 14, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#getspotify h2{
+    color: #fff;
+    font-size: 80px;
+}
+
+#getspotify span{
+    font-size: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    border-radius: 25px;
+}
+#getspotify span>span{
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+}
+
+#getspotify a{
+    text-decoration: none;
+    
+}
+
+
+/* footer */
+
+footer{
+    /* border: 2px solid red; */
+    height: 592.55px;
+    width: 1519.2px;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+footer>nav{
+    /* border: 2px solid blue; */
+    height: 380.8px;
+    width: 1170px;
+    display: flex;
+    
+}
+
+footer div{
+    /* border: 2px solid whitesmoke; */
+    height: inherit;
+    width: 195px;
+    
+}
+
+footer>nav>section{
+    /* border: 2px solid red; */
+    height: inherit;
+    width: 387px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>nav>section>div{
+    display: flex;
+    /* gap: 5px; */
+    justify-content: space-between;
+}
+
+footer>nav>section>div svg{
+    height: 3.25em;
+    width: auto;
+    fill: #fff;
+    border-radius: 50px;
+}
+
+footer>nav>section>div>a:hover svg{
+ fill: greenyellow;
+}
+
+footer ul{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 146.25px;
+    
+}
+
+footer>nav div+div{
+    /* border: 2px solid whitesmoke; */
+    height: inherit;
+    width: 195px;
+    
+}
+
+nav>div>a>svg{
+    fill: #fff;
+    height: 2.25em;
+}
+
+footer nav ul h2{
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer ul{
+    list-style: none;
+    color: #fff;
+    line-height: 45px;
+
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #fff; 
+     
+    
+}
+
+#region{
+    height: 40.8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#region a{
+    color: gray;
+    font-size: 12px;
+}
+
+
+#region a:hover{
+    color: greenyellow;
+}
+
+#more ol{
+    list-style: none;
+    /* width: 100%; */
+    /* color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    font-size: 13px;
+}
+
+#more ol a{
+    color: grey;
+}
+
+#more ol a:hover{
+    color: greenyellow;
+}
+#more{
+    height: 40.95px;
+    width: 100%;
+    display: flex;
+}
+
+[dir=ltr] svg.svelte-n33a1d {
+    padding-left: 4px;
+}
+
+svg.svelte-n33a1d {
+    width: 25px;
+}
+
+#more>div+div{
+    width: 30%;
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+#more>div{
+    width: 70%;
+}
+
+
